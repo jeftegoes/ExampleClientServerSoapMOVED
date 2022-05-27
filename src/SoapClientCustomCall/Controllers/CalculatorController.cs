@@ -20,26 +20,26 @@ namespace SoapClientCustomCall.Controllers
         }
 
         [HttpGet("Add/x/{x}/y/{y}")]
-        public async Task<IActionResult> Add(double x, double y) => Ok(new { result = _soapHelper.Send(_url, _action + "Add", FormatXml(x, y)) });
+        public async Task<IActionResult> Add(double x, double y) => Ok(new { result = _soapHelper.Send(_url, _action + "Add", FormatXml(x, y, "Add")) });
 
         [HttpGet("Divide/x/{x}/y/{y}")]
-        public async Task<IActionResult> Divide(double x, double y) => Ok(new { result = _soapHelper.Send(_url, _action + "Divide", FormatXml(x, y)) });
+        public async Task<IActionResult> Divide(double x, double y) => Ok(new { result = _soapHelper.Send(_url, _action + "Divide", FormatXml(x, y, "Divide")) });
 
         [HttpGet("Multiply/x/{x}/y/{y}")]
-        public async Task<IActionResult> Multiply(double x, double y) => Ok(new { result = _soapHelper.Send(_url, _action + "Multiply", FormatXml(x, y)) });
+        public async Task<IActionResult> Multiply(double x, double y) => Ok(new { result = _soapHelper.Send(_url, _action + "Multiply", FormatXml(x, y, "Multiply")) });
 
         [HttpGet("Subtract/x/{x}/y/{y}")]
-        public async Task<IActionResult> Subtract(double x, double y) => Ok(new { result = _soapHelper.Send(_url, _action + "Subtract", FormatXml(x, y)) });
+        public async Task<IActionResult> Subtract(double x, double y) => Ok(new { result = _soapHelper.Send(_url, _action + "Subtract", FormatXml(x, y, "Subtract")) });
 
 
-        private string FormatXml(double x, double y)
+        private string FormatXml(double x, double y, string method)
         {
             return $@"<soap:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'>
                         <soap:Body>
-                        <Add xmlns='http://tempuri.org/'>
-                            <x>{x}</x>
-                            <y>{y}</y>
-                        </Add>
+                            <{method} xmlns='http://tempuri.org/'>
+                                <x>{x}</x>
+                                <y>{y}</y>
+                            </{method}>
                         </soap:Body>
                     </soap:Envelope>";
         }

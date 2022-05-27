@@ -1,6 +1,6 @@
 ﻿using System.Web.Services;
 
-namespace SoapWebService
+namespace SoapServer
 {
     /// <summary>
     /// Summary description for Calculator

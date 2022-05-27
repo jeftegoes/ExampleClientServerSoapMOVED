@@ -5,11 +5,11 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{37D2C106-E841-4609-81C5-BFD6C72C34E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapWebService", "src\SoapWebService\SoapWebService.csproj", "{7EDF6359-A00D-4D42-963A-63FE3B432A74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapServer", "src\SoapServer\SoapServer.csproj", "{7EDF6359-A00D-4D42-963A-63FE3B432A74}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoapClientServiceReference", "src\SoapClientServiceReference\SoapClientServiceReference.csproj", "{C7F345F6-5342-4D6D-8C3B-14651B9D412E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapClientCustomCall", "SoapClientCustomCall\SoapClientCustomCall.csproj", "{74837F86-CA2F-4322-9F15-503C82DB5F3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapClientCustomCall", "src\SoapClientCustomCall\SoapClientCustomCall.csproj", "{74837F86-CA2F-4322-9F15-503C82DB5F3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
