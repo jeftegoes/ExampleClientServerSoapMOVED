@@ -10,6 +10,8 @@
 ### 1. What is this project
 
 - This is a project that shows how to consume a soap webservice in two ways.
+  - First way, importing the webservice wsdl by visual studio and generating the methods automatically.
+  - Second way, consuming manually using WebResponse.
 
 ### 2. How is it organized
 
