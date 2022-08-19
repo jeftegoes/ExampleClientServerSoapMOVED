@@ -7,19 +7,19 @@
   - [2.1. First way, importing the webservice wsdl by visual studio and generating the methods automatically.](#21-first-way-importing-the-webservice-wsdl-by-visual-studio-and-generating-the-methods-automatically)
   - [2.2. Second way, consuming manually using **WebResponse**.](#22-second-way-consuming-manually-using-webresponse)
 
-### 1. What is this project
+# 1. What is this project
 
 - This is a project that shows how to consume a soap webservice in two ways.
   - First way, importing the webservice wsdl by visual studio and generating the methods automatically.
   - Second way, consuming manually using WebResponse.
 
-### 2. How is it organized
+# 2. How is it organized
 
 - SoapServer (.NET Framework 4.7.2 / SOAP Server)
 - SoapClientCustomCall (.NET 6.0 / REST Client)
 - SoapClientServiceReference (.NET 6.0 / REST Client)
 
-#### 2.1. First way, importing the webservice wsdl by visual studio and generating the methods automatically.
+## 2.1. First way, importing the webservice wsdl by visual studio and generating the methods automatically.
 
 | Step                           |                                                                |
 | ------------------------------ | -------------------------------------------------------------- |
@@ -31,6 +31,6 @@
 | 6. Result                      | ![SoapClientServiceReference](/Images/Result.png)              |
 | Project                        | [SoapClientServiceReference](/src/SoapClientServiceReference/) |
 
-#### 2.2. Second way, consuming manually using **WebResponse**.
+## 2.2. Second way, consuming manually using **WebResponse**.
 
 [SoapClientCustomCall](/src/SoapClientCustomCall/)
