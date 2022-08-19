@@ -21,20 +21,15 @@
 
 #### 2.1. First way, importing the webservice wsdl by visual studio and generating the methods automatically.
 
-1. Steps to import WSDL:
-   ![SoapClientServiceReference](/Images/Step1.png)
-2. Choose WCF Web Service
-   ![SoapClientServiceReference](/Images/Step2.png)
-3. Select endpoint and methods
-   ![SoapClientServiceReference](/Images/Step3.png)
-4. Create reference file
-   ![SoapClientServiceReference](/Images/Step4.png)
-5. Choose visibility classes
-   ![SoapClientServiceReference](/Images/Step5.png)
-6. Result
-   ![SoapClientServiceReference](/Images/Result.png)
-
-[SoapClientServiceReference](/src/SoapClientServiceReference/)
+| Step                           |                                                                |
+| ------------------------------ | -------------------------------------------------------------- |
+| 1. Steps to import WSDL        | ![SoapClientServiceReference](/Images/Step1.png)               |
+| 2. Choose WCF Web Service      | ![SoapClientServiceReference](/Images/Step2.png)               |
+| 3. Select endpoint and methods | ![SoapClientServiceReference](/Images/Step3.png)               |
+| 4. Create reference file       | ![SoapClientServiceReference](/Images/Step4.png)               |
+| 5. Choose visibility classes   | ![SoapClientServiceReference](/Images/Step5.png)               |
+| 6. Result                      | ![SoapClientServiceReference](/Images/Result.png)              |
+| Project                        | [SoapClientServiceReference](/src/SoapClientServiceReference/) |
 
 #### 2.2. Second way, consuming manually using **WebResponse**.
 
